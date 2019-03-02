@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AT Mombasa</title>
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+
+</head>
+
+<body>
+
+    <header>
+        <h2><a href="#">AT workshop</a></h2>
+        <nav>
+            <li><a href="#">Sms</a></li>
+            <li><a href="#">Voice</a></li>
+            <li><a href="#">Payment</a></li>
+            <li><a href="#">Airtime</a></li>
+
+        </nav>
+    </header>
+
+    <section class="main">
+        {% block content %}
+        {% endblock %}
+        <div class="background-image" style="background-image: url(../img/3.jpeg);"></div>
+        <h1>Store Management App</h1>
+        <h3>Is a web application that helps store owners manage sales and product inventory records.
+        </h3>
+        <blockquote>
+            Management is not being brilliant. Management is being conscientious.
+        </blockquote>
+    </section>
+
+</body>
+
+</html>
